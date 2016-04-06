@@ -15,26 +15,24 @@
         <div class='row'>
           <div class='col-md-6'>
             <h1> Generate a random Pokémon!</h1>
-            <button id='genPok' class='btn btn-lg btn-info'>Generate</button>
+            <button ng-click='getPokemon()' id='genPok' class='btn btn-lg btn-info'>Generate</button>
             <div id='displayPok'>
-              <p>Hey</p>
+              <h3>{{pokeName}}</h3>
+              <img ng-src='{{pokeImg}}'>
             </div>
           </div>
           <div class='col-md-6'>
             <h1>Generate a random power!</h1>
-            <button id='genPow' class='btn btn-lg btn-info'>Generate</button>
+            <button ng-click='getPower()' id='genPow' class='btn btn-lg btn-info'>Generate</button>
             <div id='displayPow'>
-              <p>Hey</p>
+              <h3>{{powName}}</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/factories.js"></script>
     <script type="text/javascript" src="js/controllers.js"></script>
